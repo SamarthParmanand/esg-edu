@@ -7,7 +7,7 @@ export const Completed = ({ status }) => {
       sx={{
         color: "green",
         border: "none",
-        backgroundColor: "#e3f3e3",
+        backgroundColor: "rgba(0, 255, 0, 0.1)",
       }}
       variant="outlined"
     />
@@ -18,9 +18,9 @@ export const Undergoing = ({ status }) => {
     <Chip
       label={status}
       sx={{
-        color: "#b6b63d",
+        color: "green",
         border: "none",
-        backgroundColor: "#f2f2dd",
+        backgroundColor: "rgba(0, 255, 0, 0.1)",
       }}
       variant="outlined"
     />
@@ -33,7 +33,7 @@ export const Neverending = ({ status }) => {
       sx={{
         color: "purple",
         border: "none",
-        backgroundColor: "#ede7ed",
+        backgroundColor: "rgba(128, 0, 128, 0.1)",
       }}
       variant="outlined"
     />
@@ -44,9 +44,9 @@ export const Stopped = ({ status }) => {
     <Chip
       label={status}
       sx={{
-        color: "grey",
+        color: "red",
         border: "none",
-        backgroundColor: "#ffffff",
+        backgroundColor: "rgba(255, 0, 0, 0.1)",
       }}
       variant="outlined"
     />
@@ -57,9 +57,9 @@ export const Delayed = ({ status }) => {
     <Chip
       label={status}
       sx={{
-        color: "red",
+        color: "rgba(100,100,0)",
         border: "none",
-        backgroundColor: "#f3eae3",
+        backgroundColor: "rgba(255, 255, 0, 0.2)",
       }}
       variant="outlined"
     />
