@@ -3,6 +3,7 @@
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import SyncIcon from "@mui/icons-material/Sync";
+
 import {
   Box,
   Button,
@@ -74,7 +75,7 @@ const InstitutionTable = () => {
         <Box style={{ marginTop: "20px" }}>
           <button
             className="bg-violet-600 hover:bg-violet-700 text-white font-semibold py-2 px-4 rounded-full"
-            onClick={router.push('/')}
+            onClick={router.push("/")}
           >
             Add
           </button>
@@ -140,9 +141,7 @@ const InstitutionTable = () => {
                   <TableRow
                     key={i.id}
                     hover
-                    onClick={() => {
-                      // router.push(`/${row.path}?data=${JSON.stringify(row)}`);
-                    }}
+                    onClick={() => {}}
                     sx={{ cursor: "pointer" }}
                   >
                     <TableCell align="left">{i.name}</TableCell>
